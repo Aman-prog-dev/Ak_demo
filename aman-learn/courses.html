@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses — aman.learn</title>
+    <meta name="description" content="Nine practical tracks for school, college, first jobs and the next version of you." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body data-page="courses">
+    <div data-slot="header"></div>
+
+    <main>
+        <section class="shell page-hero">
+            <span class="eyebrow">The full shelf</span>
+            <h1>Learn skills<br /><span class="coral-text">that travel.</span></h1>
+            <p class="lede">Nine practical tracks for school, college, first jobs and the next version of you.</p>
+        </section>
+
+        <div class="shell">
+            <div class="filterbar">
+                <label class="search">
+                    <span data-icon="search"></span>
+                    <input type="search" data-course-search placeholder="Search a skill, tool or career path"
+                        aria-label="Search courses" />
+                </label>
+                <div class="chips">
+                    <button class="chip active" type="button" data-course-chip data-filter="all">All courses</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Core diploma">Core diploma</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Design">Design</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Analytics">Analytics</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Programming">Programming</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Accounting">Accounting</button>
+                    <button class="chip" type="button" data-course-chip data-filter="Business">Business</button>
+                </div>
+            </div>
+
+            <div class="result-row">
+                <span data-course-count></span>
+                <span class="hint"><span data-icon="filter"></span>Filtered for you</span>
+            </div>
+
+            <div class="grid-3" data-course-grid></div>
+        </div>
+    </main>
+
+    <div data-slot="footer"></div>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

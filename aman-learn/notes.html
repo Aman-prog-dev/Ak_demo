@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Hub — aman.learn</title>
+    <meta name="description"
+        content="Class summaries, handwritten explainers and quick revision sheets you can open, save and return to." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body data-page="notes">
+    <div data-slot="header"></div>
+
+    <main>
+        <section class="shell page-hero">
+            <span class="eyebrow">Free study shelf</span>
+            <h1>Notes you can<br />actually use.</h1>
+            <div class="page-hero-row">
+                <p class="lede">Class summaries, handwritten explainers and quick revision sheets — open, save and
+                    return whenever you need a nudge.</p>
+                <a class="btn btn-primary" href="sign-in.html">
+                    <span data-icon="upload"></span>Share a note
+                </a>
+            </div>
+        </section>
+
+        <div class="shell">
+            <div class="filterbar">
+                <label class="search">
+                    <span data-icon="search"></span>
+                    <input type="search" data-note-search placeholder="Search Excel, GST, shortcuts…"
+                        aria-label="Search notes" />
+                </label>
+                <div class="chips">
+                    <button class="chip active-yellow" type="button" data-note-chip data-tone="yellow"
+                        data-filter="all">All notes</button>
+                    <button class="chip" type="button" data-note-chip data-tone="yellow" data-filter="Quick revision">Quick
+                        revision</button>
+                    <button class="chip" type="button" data-note-chip data-tone="yellow"
+                        data-filter="Handwritten notes">Handwritten notes</button>
+                    <button class="chip" type="button" data-note-chip data-tone="yellow" data-filter="Cheat sheet">Cheat
+                        sheet</button>
+                    <button class="chip" type="button" data-note-chip data-tone="yellow"
+                        data-filter="Practice notes">Practice notes</button>
+                    <button class="chip" type="button" data-note-chip data-tone="yellow"
+                        data-filter="Practice sheet">Practice sheet</button>
+                </div>
+            </div>
+
+            <div class="result-row">
+                <span data-note-count></span>
+                <span class="hint"><span data-icon="filter"></span>Free to keep</span>
+            </div>
+
+            <div class="grid-3" data-note-grid></div>
+        </div>
+    </main>
+
+    <div data-slot="footer"></div>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
